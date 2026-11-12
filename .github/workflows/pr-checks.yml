@@ -1,0 +1,53 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  check:
+    name: Check conventions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check branch name, PR title and commit messages
+        env:
+          HEAD_BRANCH: ${{ github.head_ref }}
+          BASE_BRANCH: ${{ github.base_ref }}
+          TITLE: ${{ github.event.pull_request.title }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          types='feat|fix|docs|style|refactor|test|chore|ci'
+          pattern="^(${types})(\([a-z0-9-]+\))?: .+"
+          status=0
+
+          if [[ "$BASE_BRANCH" == "develop" ]]; then
+            if [[ "$HEAD_BRANCH" != "feature/pablo" && "$HEAD_BRANCH" != "feature/alvaro" ]]; then
+              echo "::error::PRs into develop must come from feature/pablo or feature/alvaro (got '$HEAD_BRANCH')"
+              status=1
+            fi
+          elif [[ "$BASE_BRANCH" == "main" ]]; then
+            if [[ "$HEAD_BRANCH" != "develop" ]]; then
+              echo "::error::PRs into main must come from develop (got '$HEAD_BRANCH')"
+              status=1
+            fi
+          fi
+
+          if ! [[ "$TITLE" =~ $pattern ]]; then
+            echo "::error::PR title '$TITLE' must follow Conventional Commits"
+            status=1
+          fi
+
+          while IFS= read -r msg; do
+            if ! [[ "$msg" =~ $pattern ]]; then
+              echo "::error::Commit message '$msg' must follow Conventional Commits"
+              status=1
+            fi
+          done < <(git log --no-merges --format=%s "$BASE_SHA..$HEAD_SHA")
+
+          exit $status
