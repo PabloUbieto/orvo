@@ -1,0 +1,16 @@
+# Editor
+.vscode/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Node
+node_modules/
+coverage/
+npm-debug.log*
+
+# Variables de entorno
+.env
+.env.*
