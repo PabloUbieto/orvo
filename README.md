@@ -52,9 +52,8 @@ Figma (Sketchy Wireframes) · HTML5 semántico · SASS · BEM · Mobile First ·
 
 ```
 orvo/
-├── .github/            # Workflows de comprobación de commits y PR
+├── .github/            # Workflow de comprobación, plantilla de PR y CODEOWNERS
 ├── assets/branding/    # Logotipo e icono
-├── docs/               # Enunciado y dossier de marca
 ├── CONTRIBUTING.md     # Guía de contribución
 └── README.md
 ```
@@ -69,7 +68,7 @@ Las normas de trabajo (ramas, commits y Pull Requests) están en la [guía de co
 
 ## ⚠️ Aviso
 
-ORVO es un nombre de trabajo. No se ha verificado su disponibilidad en los registros de marcas (OEPM, EUIPO). El nombre, el logotipo y el dossier de marca se han creado con ayuda de IA.
+ORVO es un nombre de trabajo. No se ha verificado su disponibilidad en los registros de marcas (OEPM, EUIPO). El nombre, el logotipo y los textos de la marca se han creado con ayuda de IA.
 
 ## 👥 Autores
 
