@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/branding/png-4k/orvo-logo-claro-transparente-4k.png">
-    <img src="assets/branding/png-4k/orvo-logo-oscuro-transparente-4k.png" alt="ORVO" width="420">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/branding/orvo-logo-dark.png">
+    <img src="assets/branding/orvo-logo.png" alt="ORVO" width="420">
   </picture>
 </h1>
 
@@ -53,7 +53,7 @@ Figma (Sketchy Wireframes) · HTML5 semántico · SASS · BEM · Mobile First ·
 ```
 orvo/
 ├── .github/            # Workflows de comprobación de commits y PR
-├── assets/branding/    # Logotipos, iconos y favicon
+├── assets/branding/    # Logotipo e icono
 ├── docs/               # Enunciado y dossier de marca
 ├── CONTRIBUTING.md     # Guía de contribución
 └── README.md
