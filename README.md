@@ -10,18 +10,19 @@
 </p>
 
 <p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/estado-en%20desarrollo-43D7DF" alt="Estado: en desarrollo">
   <img src="https://img.shields.io/badge/m%C3%B3dulo-DIW-101B28" alt="Módulo: Diseño de Interfaces Web">
   <img src="https://img.shields.io/badge/curso-2026%2F2027-9AA8B5" alt="Curso 2026/2027">
 </p>
 
-## 📖 Descripción
+## Descripción
 
 ORVO es una marca ficticia de tecnología y accesorios premium para espacios de trabajo: estaciones de carga, iluminación, teclados y accesorios de conectividad. Este repositorio reúne su identidad de marca, el prototipo en Figma y la maqueta de su tienda online: una homepage y la ficha de producto de ORVO Dock.
 
 Trabajo del primer trimestre del módulo **Diseño de Interfaces Web** · Grado Superior en Desarrollo de Aplicaciones Web (DAW) · Centro San Valero. Es un proyecto académico: los productos, precios y datos son ficticios y no se implementa funcionalidad real (carrito, pago, buscador, filtros).
 
-## 📋 Entregables
+## Entregables
 
 | Fase | Qué se entrega | Puntos |
 |---|---|---|
@@ -30,7 +31,7 @@ Trabajo del primer trimestre del módulo **Diseño de Interfaces Web** · Grado 
 | 2 | Prototipo en Figma (Sketchy Wireframes), móvil y desktop | 2 |
 | 3 | Maqueta: HTML semántico, SASS con BEM y Mobile First | 4 |
 
-## 🎨 Identidad de marca
+## Identidad de marca
 
 **Eslogan:** *Designed for connection.*
 
@@ -44,50 +45,40 @@ Trabajo del primer trimestre del módulo **Diseño de Interfaces Web** · Grado 
 
 **Tipografías:** Space Grotesk (titulares) e Inter (texto).
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 Figma (Sketchy Wireframes) · HTML5 semántico · SASS · BEM · Mobile First · Git y GitHub
 
-## 📁 Estructura
+## Estructura
 
 ```
 orvo/
 ├── .github/            # Workflow de comprobación, plantilla de PR y CODEOWNERS
 ├── assets/branding/    # Logotipo e icono
 ├── CONTRIBUTING.md     # Guía de contribución
+├── LICENSE
 └── README.md
 ```
 
-## 🚀 Puesta en marcha
+## Puesta en marcha
 
 Se completará cuando exista la maqueta.
 
-## 🤝 Contribuir
+## Contribuir
 
 Las normas de trabajo (ramas, commits y Pull Requests) están en la [guía de contribución](CONTRIBUTING.md).
 
-## ⚠️ Aviso
+## Aviso
 
 ORVO es un nombre de trabajo. No se ha verificado su disponibilidad en los registros de marcas (OEPM, EUIPO). El nombre, el logotipo y los textos de la marca se han creado con ayuda de IA.
 
-## 👥 Autores
+## Autores
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/PabloUbieto">
-        <img src="https://github.com/PabloUbieto.png" width="100" alt="Pablo Ubieto Foncillas"><br>
-        <b>Pablo Ubieto Foncillas</b>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/alvaaroms">
-        <img src="https://github.com/alvaaroms.png" width="100" alt="Álvaro López Martínez"><br>
-        <b>Álvaro López Martínez</b>
-      </a>
-    </td>
-  </tr>
-</table>
+Pablo Ubieto Foncillas ([@PabloUbieto](https://github.com/PabloUbieto)) y Álvaro López Martínez ([@alvaaroms](https://github.com/alvaaroms)).
+
+## Licencia
+
+Este proyecto se publica bajo la [licencia MIT](LICENSE).
 
 ---
 
